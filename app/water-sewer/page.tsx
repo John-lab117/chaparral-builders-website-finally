@@ -4,15 +4,7 @@ import { ArrowLeft, Phone, Mail, MapPin, Hammer } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 
-interface ServicePageProps {
-  title: string
-  description: string
-  category: string
-  slug: string
-  photos?: string[] // Added optional photos array
-}
-
-export default function ServicePageTemplate({ title, description, category, slug, photos }: ServicePageProps) {
+export default function WaterSewerPage() {
   return (
     <div className="flex min-h-screen">
       {/* Sidebar - Same as main page */}
@@ -76,72 +68,56 @@ export default function ServicePageTemplate({ title, description, category, slug
               <h3 className="font-semibold text-gray-900 mb-4 leading-tight">Our Services Include:</h3>
               <ul className="space-y-1 text-gray-700 leading-tight">
                 <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "slab-foundation" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
+                  className="px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer"
                   onMouseEnter={(e) => {
-                    if (slug !== "slab-foundation") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
+                    e.currentTarget.style.backgroundColor = "#F6E7D6"
+                    e.currentTarget.style.borderLeft = "4px solid #8A1F22"
                   }}
                   onMouseLeave={(e) => {
-                    if (slug !== "slab-foundation") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
+                    e.currentTarget.style.backgroundColor = "transparent"
+                    e.currentTarget.style.borderLeft = "none"
                   }}
                   tabIndex={0}
                 >
                   <Link href="/slab-foundation">Slab & Foundation Work</Link>
                 </li>
                 <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "retaining-walls" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
+                  className="px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer"
                   onMouseEnter={(e) => {
-                    if (slug !== "retaining-walls") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
+                    e.currentTarget.style.backgroundColor = "#F6E7D6"
+                    e.currentTarget.style.borderLeft = "4px solid #8A1F22"
                   }}
                   onMouseLeave={(e) => {
-                    if (slug !== "retaining-walls") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
+                    e.currentTarget.style.backgroundColor = "transparent"
+                    e.currentTarget.style.borderLeft = "none"
                   }}
                   tabIndex={0}
                 >
                   <Link href="/retaining-walls">Concrete Block Retaining Walls</Link>
                 </li>
                 <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "sidewalks-driveways" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
+                  className="px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer"
                   onMouseEnter={(e) => {
-                    if (slug !== "sidewalks-driveways") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
+                    e.currentTarget.style.backgroundColor = "#F6E7D6"
+                    e.currentTarget.style.borderLeft = "4px solid #8A1F22"
                   }}
                   onMouseLeave={(e) => {
-                    if (slug !== "sidewalks-driveways") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
+                    e.currentTarget.style.backgroundColor = "transparent"
+                    e.currentTarget.style.borderLeft = "none"
                   }}
                   tabIndex={0}
                 >
                   <Link href="/sidewalks-driveways">Concrete Sidewalks & Driveways</Link>
                 </li>
                 <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "grading-compaction" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
+                  className="px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer"
                   onMouseEnter={(e) => {
-                    if (slug !== "grading-compaction") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
+                    e.currentTarget.style.backgroundColor = "#F6E7D6"
+                    e.currentTarget.style.borderLeft = "4px solid #8A1F22"
                   }}
                   onMouseLeave={(e) => {
-                    if (slug !== "grading-compaction") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
+                    e.currentTarget.style.backgroundColor = "transparent"
+                    e.currentTarget.style.borderLeft = "none"
                   }}
                   tabIndex={0}
                 >
@@ -154,58 +130,24 @@ export default function ServicePageTemplate({ title, description, category, slug
               <h3 className="font-semibold text-gray-900 mb-4 leading-tight">Underground Utilities:</h3>
               <ul className="space-y-1 text-gray-700 leading-tight">
                 <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "water-sewer" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
-                  onMouseEnter={(e) => {
-                    if (slug !== "water-sewer") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (slug !== "water-sewer") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
-                  }}
+                  className="px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer bg-red-100 border-l-4 border-red-800 font-medium"
                   tabIndex={0}
                 >
                   <Link href="/water-sewer">Water & Sewer</Link>
                 </li>
                 <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "area-drains" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
+                  className="px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer"
                   onMouseEnter={(e) => {
-                    if (slug !== "area-drains") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
+                    e.currentTarget.style.backgroundColor = "#F6E7D6"
+                    e.currentTarget.style.borderLeft = "4px solid #8A1F22"
                   }}
                   onMouseLeave={(e) => {
-                    if (slug !== "area-drains") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
+                    e.currentTarget.style.backgroundColor = "transparent"
+                    e.currentTarget.style.borderLeft = "none"
                   }}
                   tabIndex={0}
                 >
                   <Link href="/area-drains">Area Drains</Link>
-                </li>
-                <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "underground-utilities" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
-                  onMouseEnter={(e) => {
-                    if (slug !== "underground-utilities") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (slug !== "underground-utilities") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
-                  }}
-                  tabIndex={0}
-                >
-                  <Link href="/underground-utilities">Underground Utilities</Link>
                 </li>
               </ul>
             </div>
@@ -214,36 +156,28 @@ export default function ServicePageTemplate({ title, description, category, slug
               <h3 className="font-semibold text-gray-900 mb-4">Waterproofing:</h3>
               <ul className="space-y-1 text-gray-700 leading-tight">
                 <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "decks-balconies" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
+                  className="px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer"
                   onMouseEnter={(e) => {
-                    if (slug !== "decks-balconies") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
+                    e.currentTarget.style.backgroundColor = "#F6E7D6"
+                    e.currentTarget.style.borderLeft = "4px solid #8A1F22"
                   }}
                   onMouseLeave={(e) => {
-                    if (slug !== "decks-balconies") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
+                    e.currentTarget.style.backgroundColor = "transparent"
+                    e.currentTarget.style.borderLeft = "none"
                   }}
                   tabIndex={0}
                 >
                   <Link href="/decks-balconies">Decks & Balconies</Link>
                 </li>
                 <li
-                  className={`px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer ${slug === "rooftop-structures" ? "bg-red-100 border-l-4 border-red-800 font-medium" : ""}`}
+                  className="px-4 py-3 rounded-lg transition-all duration-200 ease-out hover:font-medium hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-opacity-35 cursor-pointer"
                   onMouseEnter={(e) => {
-                    if (slug !== "rooftop-structures") {
-                      e.currentTarget.style.backgroundColor = "#F6E7D6"
-                      e.currentTarget.style.borderLeft = "4px solid #8A1F22"
-                    }
+                    e.currentTarget.style.backgroundColor = "#F6E7D6"
+                    e.currentTarget.style.borderLeft = "4px solid #8A1F22"
                   }}
                   onMouseLeave={(e) => {
-                    if (slug !== "rooftop-structures") {
-                      e.currentTarget.style.backgroundColor = "transparent"
-                      e.currentTarget.style.borderLeft = "none"
-                    }
+                    e.currentTarget.style.backgroundColor = "transparent"
+                    e.currentTarget.style.borderLeft = "none"
                   }}
                   tabIndex={0}
                 >
@@ -294,10 +228,10 @@ export default function ServicePageTemplate({ title, description, category, slug
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 overflow-y-auto" style={{ marginLeft: "264px" }}>
+      <div className="flex-1 overflow-y-auto md:ml-64">
         <div className="bg-white min-h-screen">
           {/* Back to Home Link */}
-          <div className="px-12 pt-8">
+          <div className="px-4 md:px-12 pt-8">
             <Link
               href="/"
               className="inline-flex items-center text-gray-600 hover:text-gray-900 transition-colors duration-200"
@@ -308,59 +242,84 @@ export default function ServicePageTemplate({ title, description, category, slug
           </div>
 
           {/* Service Header */}
-          <div className="px-12 pt-6 pb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">{title}</h1>
+          <div className="px-4 md:px-12 pt-6 pb-8">
+            <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">Water & Sewer Services</h1>
             <div className="w-16 h-1 bg-red-800 mb-6"></div>
 
-            <p className="text-lg text-gray-600 mb-6 max-w-4xl leading-relaxed">{description}</p>
+            <p className="text-base md:text-lg text-gray-600 mb-6 max-w-4xl leading-relaxed">
+              Comprehensive water and sewer infrastructure services for residential and commercial properties. We handle
+              everything from new installations to repairs and maintenance, using modern equipment and techniques to
+              ensure reliable water supply and wastewater management systems.
+            </p>
           </div>
 
-          {/* Our Work Section */}
-          <div className="px-12 pb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Work</h2>
+          {/* Sewer Services Section */}
+          <div className="px-4 md:px-12 pb-8">
+            <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-6">Sewer Services</h2>
+            <p className="text-base md:text-lg text-gray-600 mb-8 max-w-4xl leading-relaxed">
+              Complete sewer line installation, repair, and maintenance services for residential and commercial
+              properties. We handle everything from new sewer connections to line replacements, using modern equipment
+              and techniques to ensure reliable wastewater management.
+            </p>
 
-            <div
-              className={`grid gap-8 mb-16 ${photos && photos.length > 2 ? "grid-cols-2 grid-rows-2" : "grid-cols-2"}`}
-            >
-              {photos && photos.length > 0 ? (
-                photos.map((photo, index) => (
-                  <div key={index} className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                    <Image
-                      src={photo || "/placeholder.svg"}
-                      alt={`${title} project example ${index + 1}`}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                ))
-              ) : (
-                <>
-                  <div className="bg-gray-100 rounded-lg border-2 border-dashed border-gray-300 h-64 flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <div className="w-8 h-8 border-2 border-gray-400 rounded mx-auto mb-2"></div>
-                      <p>Photo will be added</p>
-                    </div>
-                  </div>
-                  <div className="bg-gray-100 rounded-lg border-2 border-dashed border-gray-300 h-64 flex items-center justify-center">
-                    <div className="text-center text-gray-500">
-                      <div className="w-8 h-8 border-2 border-gray-400 rounded mx-auto mb-2"></div>
-                      <p>Photo will be added</p>
-                    </div>
-                  </div>
-                </>
-              )}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-12">
+              <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1573_resized-0P7x5G2GsAGzb2yUmmnTyfSCE5eSDl.jpeg"
+                  alt="Sewer project example 1"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1564_resized-unEPFJfkyM9JpsWBWuknGJUBk8Ta35.jpeg"
+                  alt="Sewer project example 2"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Water Mains Section */}
+          <div className="px-4 md:px-12 pb-16">
+            <h2 className="text-xl md:text-3xl font-bold text-gray-900 mb-6">Water Main Services</h2>
+            <p className="text-base md:text-lg text-gray-600 mb-8 max-w-4xl leading-relaxed">
+              Professional water main installation and repair services for municipal and private water systems. Our
+              experienced team handles all aspects of water main work, from new connections to emergency repairs,
+              ensuring reliable water supply and distribution.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-16">
+              <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7475_resized-01hqkheH2LgRxbRrhvj6Evv4WJe2j5.jpeg"
+                  alt="Water main project example 1"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative h-48 md:h-64 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1564_resized-BSqER5f97TL0f0OLBZO2XigtvITY08.jpeg"
+                  alt="Water main project example 2"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
 
           {/* Ready to Get Started Section */}
-          <div className="bg-gray-50 px-12 py-16">
+          <div className="bg-gray-50 px-4 md:px-12 py-16">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Ready to Get Started?</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-12">Ready to Get Started?</h2>
 
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Contact Information Card */}
-                <div className="bg-white rounded-lg border-2 border-red-800 p-8">
-                  <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                <div className="bg-white rounded-lg border-2 border-red-800 p-6 md:p-8">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
 
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
@@ -403,7 +362,7 @@ export default function ServicePageTemplate({ title, description, category, slug
                 {/* Action Buttons */}
                 <div className="flex flex-col justify-center space-y-4">
                   <Button
-                    className="bg-red-800 hover:bg-red-900 text-white h-14 text-lg font-semibold"
+                    className="bg-red-800 hover:bg-red-900 text-white h-12 md:h-14 text-base md:text-lg font-semibold"
                     size="lg"
                     asChild
                   >
@@ -412,7 +371,7 @@ export default function ServicePageTemplate({ title, description, category, slug
 
                   <Button
                     variant="outline"
-                    className="border-2 border-red-800 text-red-800 hover:bg-red-800 hover:text-white h-14 text-lg font-semibold bg-transparent"
+                    className="border-2 border-red-800 text-red-800 hover:bg-red-800 hover:text-white h-12 md:h-14 text-base md:text-lg font-semibold bg-transparent"
                     size="lg"
                     asChild
                   >

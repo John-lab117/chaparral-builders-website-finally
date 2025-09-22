@@ -108,20 +108,11 @@ export default function HomePage() {
             <ul className="space-y-1">
               <li>
                 <Link
-                  href="/sewer"
+                  href="/water-sewer"
                   className="block py-2 px-3 text-gray-700 hover:bg-[#F6E7D6] hover:border-l-4 hover:border-[#8A1F22] hover:font-medium rounded transition-all duration-200 border-b border-gray-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Sewer
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/water-mains"
-                  className="block py-2 px-3 text-gray-700 hover:bg-[#F6E7D6] hover:border-l-4 hover:border-[#8A1F22] hover:font-medium rounded transition-all duration-200 border-b border-gray-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Water Mains
+                  Water & Sewer
                 </Link>
               </li>
               <li>
@@ -131,6 +122,15 @@ export default function HomePage() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Area Drains
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/underground-utilities"
+                  className="block py-2 px-3 text-gray-700 hover:bg-[#F6E7D6] hover:border-l-4 hover:border-[#8A1F22] hover:font-medium rounded transition-all duration-200 border-b border-gray-200"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Underground Utilities
                 </Link>
               </li>
             </ul>
@@ -324,6 +324,7 @@ export default function HomePage() {
                   <ul className="space-y-2 text-gray-600">
                     <li>• Sewer Lines</li>
                     <li>• Area Drains & Potable Water Mains</li>
+                    <li>• Electrical Conduit</li>
                   </ul>
                 </div>
               </div>
@@ -375,7 +376,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-4 sm:p-6">
-                  <p className="text-red-800 text-sm font-medium">Sewer</p>
+                  <p className="text-red-800 text-sm font-medium">Water & Sewer</p>
                 </div>
               </div>
 

@@ -9,7 +9,7 @@ export default function RetainingWallsPage() {
       slug="retaining-walls"
       photos={[
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7518_resized-sP6Idf6SfOJRfoBCAe3Sj96YKnZeeA.jpeg",
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5975_resized-MTfWGcCwozVlC4VWon8K5uIYx1V3uh.jpeg",
+        "/images/block-retaining-wall-construction.jpg",
       ]}
     />
   )

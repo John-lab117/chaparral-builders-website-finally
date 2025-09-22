@@ -3,7 +3,9 @@ import ServicePageTemplate from "@/components/service-page-template"
 export default function SidewalksAndDrivewaysPage() {
   const photos = [
     "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7521_resized-k7YFclb1878UoOC9uwueoK7dkCmP8H.jpeg", // Large paved driveway with interlocking pavers
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7517_resized-Q3e6FobZ0wZyU1ScExpiEJFycwgMDX.jpeg", // Curved concrete tiered structure
+    "/images/concrete-foundation-slab.jpg", // Concrete foundation slab with boom pump
+    "/images/concrete-driveway-final.jpg", // Finished concrete driveway
+    "/images/concrete-flatwork-stairs-final.jpg", // Concrete steps with block wall
   ]
 
   return (

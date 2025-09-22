@@ -10,6 +10,8 @@ export default function GradingCompactionPage() {
       photos={[
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1777_resized-RTRKe9126yEIlfieIpAJBBN7XaTzWx.jpeg",
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_1283_resized-vfs5I7YJrrnnBqUiZKFPr0MLEoJddp.jpeg",
+        "/images/d6-dozer-grading.jpg",
+        "/images/rough-graded-slope.jpg",
       ]}
     />
   )
